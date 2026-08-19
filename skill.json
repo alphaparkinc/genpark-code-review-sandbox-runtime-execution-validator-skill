@@ -1,0 +1,35 @@
+{
+  "name": "genpark-code-review-sandbox-runtime-execution-validator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic AST code review sandbox & runtime execution validator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "code-review-sandbox",
+    "runtime-validation",
+    "ast-analyzer",
+    "execution-validator",
+    "ph-august19"
+  ],
+  "inputs": {
+    "pull_request_diff": {
+      "type": "string"
+    },
+    "runtime_environment": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "runtime_validation_pass": {
+      "type": "boolean"
+    },
+    "unhandled_exceptions_detected": {
+      "type": "array"
+    },
+    "review_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
